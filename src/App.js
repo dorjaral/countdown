@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import CountDownContainer from "./countdown-container/countdown-container.component";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import "./App.css";
+
+const App = () => {
+	return (
+		<div className="App">
+			<CountDownContainer
+				targetDate={{ date: "1 dec 2022", name: "Año nuevo" }}
+			/>
+			<CountDownContainer
+				targetDate={{ date: "24 dec 2022", name: "Navidad" }}
+			/>
+			<CountDownContainer
+				targetDate={{ date: "31 dec 2022", name: "New year" }}
+			/>
+		</div>
+	);
+};
 
 export default App;

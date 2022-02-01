@@ -1,0 +1,15 @@
+.time-display {
+  font-size: xx-large;
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.big-numbers {
+  margin: 0 0 0 0;
+  font-size: larger;
+}
+
+.time-display span {
+  font-size: large;
+  text-align: center;
+}
